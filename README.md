@@ -17,3 +17,59 @@ The data cleaning procedures implemented in this project are inspired by the fol
 4. **Short Segments** – Eliminating segments shorter than a defined distance threshold.
 5. **Harvester Speed** – Filtering records with speeds outside expected operational range.
 6. **Overlap Removal** – Cleaning double-counted or overlapping swaths.
+
+
+## 📍 Data Sources and Field Details
+
+### Manitoba
+
+**Important Attributes:**
+- `Coordinates`: Geographical position of yield samples  
+- `Time` / `IsoTime`: UTC timestamp / ISO-formatted timestamp  
+- `DISTANCE`: Travelled distance since last point  
+- `SWATHWIDTH`: Width of harvester equipment  
+- `Moisture`: Crop moisture content (%)  
+- `Elevation`: Elevation (feet)  
+- `VEHICLSPEED`: Harvester speed  
+- `VRYIEDVOL`: Volumetric yield (bu/ac)  
+- `WetMass`: Wet mass yield (lbs/ac)  
+- `SECTION ID`: Pass number  
+
+---
+
+### Alberta
+
+
+**Important Attributes:**
+- `Coordinates`: UTM Easting and Northing (meters)  
+- `Time` / `Date`: Recording timestamp  
+- `Elevation_`: GPS elevation (feet)  
+- `Swth_Wdth_`: Swath width (feet)  
+- `Yld_Mass_W`: Wet mass yield (lb/ac)  
+- `Yld_Vol_Dr`: Dry volumetric yield (bu/ac)  
+- `Yld_Mass_D`: Dry mass yield (lb/ac)  
+- `Yld_Vol_We`: Wet volumetric yield (bu/ac)  
+- `Moisture__`: Moisture content (%)  
+- `Pass_Num`: Harvester pass number  
+- `Distance_f`: Travelled distance (feet)  
+- `Speed_mph_`: Harvester speed  
+
+---
+
+### Southern Ontario
+
+
+**Important Attributes:**
+- `Coordinates`: UTM Easting and Northing (meters)  
+- `Time` / `Date`: Recording date  
+- `Duration_s`: Duration between samples (seconds)  
+- `Elevation_`: Elevation (feet)  
+- `Swth_Wdth_`: Swath width (feet)  
+- `Speed_mph_`: Vehicle speed  
+- `Distance_f`: Travelled distance (feet)  
+- `Yld_Mass_W`: Wet mass yield (lb/ac)  
+- `Yld_Vol_Dr`: Dry volumetric yield (bu/ac)  
+- `Yld_Mass_D`: Dry mass yield (lb/ac)  
+- `Yld_Vol_We`: Wet volumetric yield (bu/ac)  
+- `Moisture__`: Moisture content (%)  
+- `Pass_Num`: Harvester pass number
